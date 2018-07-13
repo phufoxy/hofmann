@@ -1,0 +1,655 @@
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* header */
+
+header {
+  background-color: #4B4B4B;
+  color: #ffffff;
+  min-height: 70px;
+  padding-top: 30px;
+}
+
+header #logo {
+  float: left;
+}
+
+header #logo p {
+  color: #EBCB80;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-style: 'Regular';
+}
+
+header nav {
+  float: right;
+  margin-top: 5px;
+}
+
+header nav li {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: normal;
+}
+
+header nav li :hover {
+  color: #EBCB80;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav .current {
+  width: 150px;
+  padding: 10px;
+  border: #ffffff solid 1px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header nav .current :hover {
+  background-color: #ffffff;
+  color: #EBCB80;
+}
+
+/* showcase */
+
+#showcase {
+  width: 100%;
+  min-height: 400px;
+  background: url('../assets/img/Background.png') no-repeat 0 00px;
+  background-size: cover;
+  text-align: center;
+  padding-top: 150px;
+  line-height: 35px;
+}
+
+#showcase h1 {
+  color: #4B4B4B;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+#showcase p {
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#showcase input[type="email"] {
+  width: 220px;
+  height: 35px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #4B4B4B;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#showcase input[type="submit"] {
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid #4B4B4B;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#showcase input[type="submit"]:hover {
+  background: #f4f4f4;
+}
+
+#showcase .i-showcase {
+  position: absolute;
+  left: 40%;
+}
+
+.i-showcase .image {
+  float: left;
+  margin-left: 25px;
+}
+
+.i-showcase img {
+  width: 70px;
+  height: 70px;
+  margin-top: 30px;
+}
+
+/* boxes */
+
+.boxes {
+  height: auto;
+  text-align: center;
+  padding: 50px;
+  font-family: 'Roboto';
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.boxes .title {
+  color: #4B4B4B;
+}
+
+.boxes .box {
+  display: inline-flex;
+  width: 30%;
+  height: 120px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  background: #fff;
+  padding: 10px;
+}
+
+.boxes .box:hover {
+  box-shadow: 1px 1px 10px rgba(17, 192, 154, 0.5);
+}
+
+.boxes .box .image {
+  width: 80px;
+  float: left;
+}
+
+.boxes .box .image img {
+  width: 80px;
+}
+
+.boxes .box .description {
+  color: #4B4B4B;
+  float: right;
+  width: 230px;
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.boxes .box .description h1, h2 {
+  font-size: 16px;
+}
+
+.boxes .box .description p {
+  margin-top: 10px;
+}
+
+/* show-plans */
+
+#show-plans {
+  background-color: #4B4B4B;
+  height: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#show-plans h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+#show-plans .card {
+  width: 28%;
+  height: 280px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  background: #4B4B4B;
+  text-align: center;
+  display: inline-table;
+  box-shadow: 1px 1px 10px rgba(20, 20, 20, 0.5);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+#show-plans .card:hover {
+  /* background: #EBCB80; */
+  /* opacity: 0.5; */
+  box-shadow: 1px 1px 15px rgba(209, 172, 184, 0.5);
+  transition: .5s ease-in-out;
+}
+
+#show-plans .card h1 {
+  color: #EBCB80;
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+#show-plans .card h2 {
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+#show-plans .card .year {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+#show-plans .card p {
+  color: #fff;
+  font-size: 15px;
+  width: 150px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#show-plans .card button {
+  width: 150px;
+  padding: 10px;
+  margin-top: 20px;
+  border: #ffffff solid 1px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#show-plans .card button:hover {
+  background-color: #fff;
+  color: #EBCB80;
+}
+
+#show-plans #current {
+  background: #EBCB80;
+  color: #4B4B4B;
+}
+
+#show-plans #current h1 {
+  color: #4B4B4B;
+}
+
+#show-plans #current h2 {
+  color: #4B4B4B;
+}
+
+#show-plans #current p {
+  color: #4B4B4B;
+}
+
+#show-plans #current button {
+  border: 0;
+  background: #4B4B4B;
+  color: #fff;
+}
+
+/* showslide */
+
+#showslide {
+  color: #4B4B4B;
+  font-family: "Roboto";
+  height: 350px;
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+#showslide img {
+  border: 4px solid #EBCB80;
+  border-radius: 50%;
+}
+
+#showslide h1 {
+  font-size: 20px;
+}
+
+#showslide p {
+  width: 450px;
+  margin: 0 auto;
+}
+
+/* advantages */
+
+.advantages {
+  background-color: #4B4B4B;
+  height: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.advantages h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.advantages .card {
+  width: 28%;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  background: #4B4B4B;
+  text-align: center;
+  display: inline-table;
+  box-shadow: 1px 1px 10px rgba(20, 20, 20, 0.5);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.advantages .card:hover {
+  /* background: #EBCB80; */
+  /* opacity: 0.5; */
+  box-shadow: 1px 1px 15px rgba(209, 172, 184, 0.5);
+  transition: .5s ease-in-out;
+}
+
+.advantages .card h1 {
+  color: #EBCB80;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.advantages .card h2 {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.advantages p {
+  color: #fff;
+  font-size: 15px;
+  width: 400px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.advantages .card p {
+  padding-top: 20px;
+  color: #fff;
+  font-size: 15px;
+  width: 250px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.advantages .card button {
+  width: 150px;
+  padding: 10px;
+  margin-top: 50px;
+  border: #EBCB80 solid 1px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #EBCB80;
+  cursor: pointer;
+}
+
+.advantages .card button:hover {
+  background-color: #fff;
+  color: #EBCB80;
+}
+
+/* plances */
+
+#plances {
+  background-color: gainsboro;
+  height: auto;
+  text-align: center;
+  font: 16px 'Roboto';
+  font-weight: normal;
+  padding: 50px;
+}
+
+#plances h1 {
+  color: #4B4B4B;
+  font-family: 'Roboto';
+}
+
+#plances .card {
+  margin-left: 20px;
+  margin-top: 25px;
+  display: inline-table;
+  width: 28%;
+}
+
+#show-account {
+  height: 500px;
+  background: url('/assets/img/background\ \(1\).png');
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+}
+
+#show-account h1 {
+  font-family: "Roboto";
+  font-size: 35px;
+  color: #fff;
+  font-weight: normal;
+}
+
+#show-account form {
+  width: 28%;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  background: #4B4B4B;
+  text-align: center;
+  display: inline-table;
+  box-shadow: 1px 1px 10px rgba(20, 20, 20, 0.5);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+#show-account form:hover {
+  /* background: #EBCB80; */
+  /* opacity: 0.5; */
+  box-shadow: 1px 1px 15px rgba(209, 172, 184, 0.5);
+  transition: .5s ease-in-out;
+}
+
+#show-account form input[type="text"], input[type="password"] {
+  background: #f4f4f4;
+  width: 300px;
+  height: 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+}
+
+#show-account form p {
+  color: #EBCB80;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+#show-account form input[type="submit"] {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  background: #EBCB80;
+  color: #4B4B4B;
+  border-radius: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#show-account form input[type="submit"]:hover {
+  background: #fff;
+}
+
+/* contacts */
+
+#contacts {
+  height: auto;
+  padding: 50px;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+#contacts .address {
+  float: left;
+  width: 20%;
+  margin-top: 20px;
+}
+
+#contacts form {
+  margin-left: 40px;
+  float: left;
+  width: 50%;
+  height: 350px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  background: #f4f4f4;
+  box-shadow: 1px 1px 10px rgba(20, 20, 20, 0.5);
+  font-family: 'Roboto';
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#contacts form .name input[type="text"] {
+  width: 350px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #EBCB80;
+  background: #ffffff;
+  padding: 5px;
+}
+
+#contacts form .email input[type="email"] {
+  width: 350px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #EBCB80;
+  background: #ffffff;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#contacts form input[type="submit"] {
+  width: 250px;
+  height: 50px;
+  border: 0;
+  background: #EBCB80;
+  color: #4B4B4B;
+  border-radius: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#contacts form input[type="submit"]:hover {
+  background: #fff;
+}
+
+#contacts form .messager textarea {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #EBCB80;
+  background: #ffffff;
+  margin-top: 10px;
+}
+
+#contacts form .email label {
+  width: 200px;
+  font-size: 16px;
+}
+
+#contacts .description {
+  float: right;
+  width: 20%;
+  margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+  height: 450px;
+  background: #4B4B4B;
+  text-align: center;
+  font-family: 'Roboto';
+  padding: 50px;
+}
+
+footer .header {
+  color: #f4f4f4;
+  text-align: center;
+  border-top: 0.5px solid #fff;
+  padding: 20px;
+  margin-top: 350px;
+}
+
+footer .header .icon {
+  float: left;
+  font-size: 20px;
+}
+
+footer .header li {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: normal;
+}
+
+footer .header li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .header li a:hover {
+  color: #EBCB80;
+}
+
+footer .header img {
+  float: right;
+}
