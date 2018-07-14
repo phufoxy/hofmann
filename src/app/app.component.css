@@ -527,25 +527,24 @@ header nav .current :hover {
 /* contacts */
 
 #contacts {
-  height: auto;
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
   padding: 50px;
-  font-family: 'Roboto';
-  text-align: center;
 }
 
 #contacts .address {
-  float: left;
   width: 20%;
-  margin-top: 20px;
+  margin-right: 10px;
 }
 
 #contacts form {
-  margin-left: 40px;
-  float: left;
-  width: 50%;
+  width: 40%;
   height: 350px;
   border-radius: 5px;
-  /* border: 1px solid #ccc; */
   background: #f4f4f4;
   box-shadow: 1px 1px 10px rgba(20, 20, 20, 0.5);
   font-family: 'Roboto';
@@ -556,33 +555,28 @@ header nav .current :hover {
   text-align: center;
 }
 
-#contacts form .name input[type="text"] {
-  width: 350px;
-  height: 20px;
-  border-radius: 5px;
-  border: 1px solid #EBCB80;
-  background: #ffffff;
-  padding: 5px;
+#contacts form lable {
+  text-align: right;
 }
 
-#contacts form .email input[type="email"] {
-  width: 350px;
-  height: 20px;
-  border-radius: 5px;
-  border: 1px solid #EBCB80;
-  background: #ffffff;
-  padding: 5px;
-  margin-top: 10px;
+#contacts form input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 #contacts form input[type="submit"] {
-  width: 250px;
+  width: 80%;
   height: 50px;
   border: 0;
   background: #EBCB80;
   color: #4B4B4B;
   border-radius: 25px;
-  margin-top: 10px;
+  margin-top: 30px;
   font-weight: bold;
 }
 
@@ -590,26 +584,10 @@ header nav .current :hover {
   background: #fff;
 }
 
-#contacts form .messager textarea {
-  width: 300px;
-  height: 200px;
-  border-radius: 5px;
-  border: 1px solid #EBCB80;
-  background: #ffffff;
-  margin-top: 10px;
-}
-
-#contacts form .email label {
-  width: 200px;
-  font-size: 16px;
-}
-
 #contacts .description {
-  float: right;
   width: 20%;
-  margin-top: 20px;
+  margin-left: 30px;
 }
-
 /* footer */
 
 footer {
